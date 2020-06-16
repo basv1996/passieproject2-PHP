@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://use.typekit.net/zit6srf.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Profile | Gamer Finder</title>
+</head>
+  <body id="profile_page_edit">
+<header class="top">
+<h4 class="terugknop" id="terugknop">&#9668;</h4>
+<h1>Profile | Edit Mode</h1>
+    <h4></h4>
+</header>
+ <main>
+ <div class="container">
+     <form action="../php/update_acc.php" method="POST">
+    <div>
+     <label>Username</label>
+     <input id="username" type="text" name="username" placeholder="type here">
+     </div>
+     <div>
+     <label>Console</label>
+     <input id="console" type="console" name="console" placeholder="type here">
+     </div>
+     <div>
+     <label>Biography</label>
+     <input class="bio" type="text" name="biography" id="biography">
+     </div>
+      <div>
+     <label>Top 3 games</label>
+     <input type="text" name="top1" id="top1" placeholder="game1">
+     <input type="text" name="top2" id="top2" placeholder="game2">
+     <input type="text" name="top3" id="top3" placeholder="game3">
+     </div>
+     <div>
+    <input class="saveProfile" type="submit" value="Save">
+         </div>
+ </form>
+     </div>
+          </main>
+     <script src="../js/Load_storages.js"></script>
+     <script src="../js/goBack.js"></script>
+</body>
+</html>
